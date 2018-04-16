@@ -1,0 +1,10 @@
+---
+
+- hosts: localhost
+  connection: local
+  roles: 
+    - ../../ansible-plugin-lookup_ini_sections
+  tasks:
+    - debug: msg="{{ lookup('ini_sections', file='test.ini') }}"
+    - debug: msg="{{ lookup('ini_sections', file='test.ini')[0]['name'] }}"
+    - debug: msg="{% for section in lookup('ini_sections', file='test.ini') %}{% if section.name == 'section1' %}{{ section['params'] }}{% endif %}{% endfor %}"
