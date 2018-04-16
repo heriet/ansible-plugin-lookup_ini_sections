@@ -1,5 +1,7 @@
 # ini_sections Lookup Plugin
 
+[![Build Status](https://travis-ci.org/heriet/ansible-role-lookup_ini_sections.svg?branch=master)](https://travis-ci.org/heriet/ansible-role-lookup_ini_sections)
+
 This plugin provides a lookup plugin to ini sections
 
 ## Requirements
