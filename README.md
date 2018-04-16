@@ -31,7 +31,7 @@ playbook
 - name: My test Play
   hosts: all
   roles:
-    - lookup_ini_sections
+    - heriet.lookup_ini_sections
   tasks
     - debug: msg="{{ lookup('ini_sections', file='test.ini') }}"
 ```
